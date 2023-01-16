@@ -32,7 +32,7 @@ services:
       context: .
       dockerfile: docker/parsr-ui/Dockerfile
       args:
-        VUE_APP_API: ${VUE_APP_API:-http://localhost:3001}
+        VUE_APP_API: ${VUE_APP_API:-http://parsr:3001}
     ports:
       - 8080:80
 

@@ -8,7 +8,7 @@ USER 1001
 ARG NODE_ENV=development
 ARG DEV_MODE=true
 
-ARG VUE_APP_API=${VUE_APP_API}
+ENV VUE_APP_API=${VUE_APP_API}
 
 #COPY --chown=1001:root demo/vue-viewer /opt/app-root/src
 #COPY --chown=1001:root docker/parsr-ui docker/parsr-ui
